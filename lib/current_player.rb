@@ -12,15 +12,15 @@ end
 
 #current_player
 
-def current_player(board)
-  if turn_count(board).even?
-    return "X"
-  else return "O"
-  end
-end
+# def current_player(board)
+#   if turn_count(board).even?
+#     return "X"
+#   else return "O"
+#   end
+# end
 
 #current_player:ternary
 
 def current_player(board)
-  turn_count(board).even? ? return "X" : return "O"
+  turn_count(board).even? ? "X" : "O"
 end
