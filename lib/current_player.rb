@@ -18,3 +18,9 @@ def current_player(board)
   else return "O"
   end
 end
+
+#current_player:ternary
+
+def current_player(board)
+  turn_count(board).even? ? return "X" : return "O"
+end
